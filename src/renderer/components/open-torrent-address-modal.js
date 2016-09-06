@@ -31,7 +31,7 @@ module.exports = class OpenTorrentAddressModal extends React.Component {
 }
 
 function handleKeyDown (e) {
-  if (e.which === 13) this.handleOK() /* hit Enter to submit */
+  if (e.which === 13) handleOK.call(this) /* hit Enter to submit */
 }
 
 function handleOK () {
